@@ -1,0 +1,99 @@
+/* General Layout and Structure */
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+   
+    margin-top: 30px;
+  }
+  
+  .project-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    position: relative;
+    will-change: transform, box-shadow;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px); /* Lift effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .project-card:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .project-card:hover:before {
+    opacity: 1; /* Subtle overlay effect on hover */
+  }
+  
+  /* Image Styling */
+  .project-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .project-card:hover .project-img {
+    transform: scale(1.05); /* Zoom effect on hover */
+  }
+  
+  /* Project Info Styling */
+  .project-info {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .project-name {
+    font-size:20px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+    transition: color 0.3s ease;
+  }
+  
+  .project-card:hover .project-name {
+    color: #007bff; /* Change name color on hover */
+  }
+  
+  .project-description {
+    font-size: 1rem;
+    color: #666;
+    margin: 10px 0;
+    transition: color 0.3s ease;
+  }
+  
+  .project-card:hover .project-description {
+    color: #333; /* Darken description color on hover */
+  }
+  
+  /* Link Styling */
+  .project-link {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .project-link:hover {
+    text-decoration: underline;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: white;
+  }
+  

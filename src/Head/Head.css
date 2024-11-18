@@ -1,0 +1,87 @@
+/* Header layout */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color:white;
+    background: url("https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTAzL3Jhd3BpeGVsX29mZmljZV81MV9waG90b19vZl9ibGFja19kYXJrX3NreV9iYWNrZ3JvdW5kX21pbmltYWxpc19iYjA3Njk5OS1hMWNhLTRhZTUtOTgxMy1hYWI4ZTQ1NWU0MGNfMS5qcGc.jpg");
+    /* background-color: rgb(88, 88, 88); */
+    border-bottom: 2px solid #ccc;
+  }
+  
+  .left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    color:white;
+  }
+  
+  /* Right section (Description) */
+.right {
+    max-width: 60%;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  .right p {
+    margin: 0;
+  }
+  
+  /* Highlight important words (e.g., skills, key features) */
+  .highlight {
+    color:gray; /* Blue for highlights */
+    font-weight: bold;
+  }
+  
+  .tech-highlight {
+    color: #333; /* Darker color for tech terms */
+    font-weight: bold;
+  }
+  
+  /* Bold and emphasize key sections */
+  .right strong {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Optional: Add a background to make the intro pop */
+  .right p {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .right em {
+    font-style: italic;
+    color: #777;
+  }
+  
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .right {
+      max-width: 100%;
+      margin-top: 20px;
+    }
+  }
+  

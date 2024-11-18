@@ -1,0 +1,25 @@
+.training-link {
+    color: #0077cc;  /* Link color */
+    text-decoration: none;  /* Remove underline */
+    font-weight: bold;
+    margin-top: 10px;
+    display: inline-block;
+  }
+  
+  .training-link:hover {
+    color: #005fa3;  /* Change color on hover */
+    text-decoration: underline;  /* Add underline on hover */
+  }
+  .training-box {
+    margin-bottom: 50px;
+    border: 1px solid white;
+    background-color: whitesmoke;
+    color:black;
+    border-radius: 20px;
+    padding: 30px;
+    width: 250px;
+    min-height: 200px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: translateY(20px); /* Slightly shift the box */
+  }

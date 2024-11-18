@@ -1,0 +1,85 @@
+/* Education Section */
+.education {
+    padding: 20px;
+    text-align: center;
+    /* background-color: rgb(88, 88, 88); */
+    /* background: linear-gradient(135deg,rgb(1, 15, 46),rgb(127, 150, 194)); */
+    background: url("https://w0.peakpx.com/wallpaper/1001/142/HD-wallpaper-space-black-stars-night-dark.jpg");
+    border-bottom: 2px solid #ccc;
+  }
+  
+  .education h2 {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 30px;
+  }
+  
+  /* Container for Education Boxes */
+  .education-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Ensures responsiveness */
+  }
+  
+  /* Individual Education Box */
+  .education-box {
+    margin-bottom: 50px;
+    border: 1px solid white;
+    background-color: whitesmoke;
+    color:black;
+    border-radius: 50%;
+    padding: 30px;
+    width: 250px;
+    min-height: 200px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: translateY(20px); /* Slightly shift the box */
+  }
+  
+  .education-box:hover {
+    transform: translateY(-10px); /* Lift the box on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .education-header h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .education-header p {
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  
+  .education-body p {
+    font-size: 1rem;
+    margin: 10px 0;
+  }
+  
+  /* Animations on Box Appearance */
+  .education-box.animate__fadeInLeft {
+    animation-duration: 1s;
+  }
+  
+  .education-box.animate__delay-1s {
+    animation-delay: 1s;
+  }
+  
+  .education-box.animate__delay-2s {
+    animation-delay: 2s;
+  }
+  
+  /* Responsiveness: Stacking on mobile */
+  @media (max-width: 768px) {
+    .education-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .education-box {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  }
+  

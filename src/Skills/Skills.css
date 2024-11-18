@@ -1,0 +1,114 @@
+.lbg
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://img.freepik.com/free-vector/blurred-bokeh-pattern-wallpaper-soft-touch-your-walls_1017-43483.jpg");
+}
+/* General styles */
+.skills-timeline {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-bottom: 40px;
+  }
+
+  
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Timeline container */
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .skill-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .skill-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .skill-name {
+    color: #333;
+  }
+  
+  .skill-level {
+    color: #666;
+
+  }
+  
+  /* Progress bar container */
+  .progress-bar-background {
+    width: 100%;
+    height: 12px;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    background-color:black;
+    transition: width 0.5s ease-in-out;
+  }
+  
+  /* Media Queries for responsiveness */
+  
+  /* Small screen adjustments (for mobile devices) */
+  @media (max-width: 600px) {
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    .timeline {
+      gap: 15px;
+    }
+  
+    .skill-item {
+      gap: 10px;
+    }
+  
+    .skill-info {
+      font-size: 0.875rem;
+    }
+  
+    .progress-bar-background {
+      height: 10px;
+    }
+  
+    .progress-bar {
+      background-color: #2196f3; /* You can change this color for mobile */
+    }
+  }
+  
+  /* Medium screen adjustments (for tablets) */
+  @media (max-width: 900px) {
+    h2 {
+      font-size: 1.75rem;
+    }
+  
+    .timeline {
+      gap: 18px;
+    }
+  
+    .skill-info {
+      font-size: 1rem;
+    }
+  
+    .progress-bar-background {
+      height: 11px;
+    }
+  }
+  
