@@ -3,6 +3,7 @@ import p1 from "../images/p1.png";
 import p3 from '../images/p3.png'
 import p2 from '../images/p2.png'
 import p4 from '../images/p4.png'
+import p5 from '../images/p5.png'
 const Projects=[
 {
     name:"Cinema House",
@@ -28,12 +29,12 @@ const Projects=[
     image:p4,
     link:"https://github.com/Kashishh13/travelmania-frontend",
 },
-// {
-//     name:"",
-//     description:"",
-//     image:"",
-//     link:"",
-// },
+{
+    name:"QuoteGenerator",
+    description:"The Quote Generator App is a fun and interactive web application that provides users with inspiring and motivational quotes at the click of a button. Whether you're looking for some daily inspiration or a boost of wisdom, this app serves up a random quote from a rich collection. Users can also share their favorite quotes with friends and followers on Twitter with ease.",
+    image:p5,
+    link:"https://quote-generator-frontend.vercel.app/",
+},
 // {
 //     name:"",
 //     description:"",
